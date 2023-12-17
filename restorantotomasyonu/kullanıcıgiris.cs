@@ -21,9 +21,10 @@
             if (result)
             {
                 cPersonelHareketleri ch = new cPersonelHareketleri();
-                ch.PersonelId=cGenel._personelId;
+                ch.PersonelId = cGenel._personelId;
                 ch.Islem = "Giriş yapıldı";
-                ch.Tarih=DateTime.Now;
+                ch.Tarih = DateTime.Now;
+                ch.PersonelActionSave(ch);
 
                 this.Hide(); //Bu sat�r, mevcut formu gizler. Yani, form penceresi kullan�c� taraf�ndan g�r�nmez hale gelir. Form kapat�lmaz, sadece kullan�c� ekran�nda g�r�nmez.
                 AnaMenu menu = new AnaMenu();

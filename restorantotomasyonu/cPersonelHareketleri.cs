@@ -31,7 +31,7 @@ namespace restorantotomasyonu
         {
             bool result = false;
             SqlConnection con = new SqlConnection(gnl.conString);
-            SqlCommand cmd = new SqlCommand("Insert ınto personelhareketleri(PERSONELID,ISLEM,TARIH) values (@personelId , @ıslem , @tarih)",con);
+            SqlCommand cmd = new SqlCommand("Insert Into personelhareketleri(PERSONELID,ISLEM,TARIH) Values (@personelId , @islem , @tarih)",con);
             try
             {
                 if (con.State == ConnectionState.Closed)
@@ -39,8 +39,8 @@ namespace restorantotomasyonu
                     con.Open();
                 }
                 cmd.Parameters.Add("@personelId", SqlDbType.Int).Value = ph._PersonelId;
-                cmd.Parameters.Add("@ıslem", SqlDbType.VarChar).Value = ph._Islem;
-                cmd.Parameters.Add("@tarıh", SqlDbType.DateTime).Value = ph._Tarih;
+                cmd.Parameters.Add("@islem", SqlDbType.VarChar).Value = ph._Islem;
+                cmd.Parameters.Add("@tarih", SqlDbType.DateTime).Value = ph._Tarih;
 
                 result = Convert.ToBoolean(cmd.ExecuteNonQuery());
             }
