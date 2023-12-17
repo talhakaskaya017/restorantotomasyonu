@@ -9,6 +9,7 @@ namespace restorantotomasyonu
     internal class cGenel
     {
         public string conString = "Server =.\\SQLEXPRESS;Database=restorant;Trusted_Connection=True";
-        public int _personelId;
+        public static int _personelId;
+        public static int _gorevId;
     }
 }

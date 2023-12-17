@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms; 
 
 namespace restorantotomasyonu
 {
@@ -55,11 +57,40 @@ namespace restorantotomasyonu
             }
             return result;
         }
-        internal bool PersonelEnrtyControl(object text, int personelId)
+        public void personelGetbyInformation (ComboBox cb)
         {
-            throw new NotImplementedException();
+            cb.Items.Clear();
+            SqlConnection con = new SqlConnection(gnl.conString); //Burda veri tabanına bağlanıyoruz.
+            SqlCommand cmd = new SqlCommand("Select * from personeller" , con); //Gelen ıd ve şifreyi kontrol ediyoruz.
+
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read()) 
+            {
+                cPersoneller p = new cPersoneller();
+                p._PersonelId = Convert.ToInt32(dr["ID"]);
+                p._PersonelGorevId = Convert.ToInt32(dr["GOREVID"]);
+                p._PersonelAd = Convert.ToString(dr["AD"]);
+                p._PersonelSoyad = Convert.ToString(dr["SOYAD"]);
+                p._PersonelKullanıcıAdı = Convert.ToString(dr["KULLANICIADI"]);
+                p._PersonelDurum = Convert.ToBoolean(dr["DURUM"]);
+                cb.Items.Add(p);
+            }
+            dr.Close();
+            con.Close();
+            
+
         }
+        public override string ToString()
+        {
+            return PersonelAd + " " + PersonelSoyad;
+        }
+
     }
+        
 }
 
 

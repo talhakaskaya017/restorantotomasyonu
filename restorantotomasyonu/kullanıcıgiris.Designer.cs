@@ -60,6 +60,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(151, 27);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // comboBox1
             // 
@@ -68,10 +69,11 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 2;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // cikisbtn
             // 
-            cikisbtn.Location = new Point(147, 356);
+            cikisbtn.Location = new Point(298, 353);
             cikisbtn.Name = "cikisbtn";
             cikisbtn.Size = new Size(94, 29);
             cikisbtn.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             // grsbtn
             // 
-            grsbtn.Location = new Point(342, 356);
+            grsbtn.Location = new Point(121, 353);
             grsbtn.Name = "grsbtn";
             grsbtn.Size = new Size(94, 29);
             grsbtn.TabIndex = 3;
