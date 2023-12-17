@@ -37,6 +37,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             Name = "AnaMenu";
+            Load += AnaMenu_Load;
             ResumeLayout(false);
         }
 
