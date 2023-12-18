@@ -118,39 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 83</value>
-  </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 42</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>masa</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 155</value>
-  </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>rezervasyon</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 210</value>
-  </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
     <value>paket servis</value>
@@ -159,14 +140,8 @@
   <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 273</value>
-  </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="button4.Text" xml:space="preserve">
     <value>müşteriler</value>
@@ -174,14 +149,8 @@
   <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 343</value>
-  </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>kasa işlemleri</value>
@@ -189,14 +158,8 @@
   <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 409</value>
-  </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="button6.Text" xml:space="preserve">
     <value>mutfak</value>
@@ -204,14 +167,8 @@
   <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 92</value>
-  </data>
   <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="button7.Text" xml:space="preserve">
     <value>raporlar</value>
@@ -219,14 +176,8 @@
   <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 409</value>
-  </data>
   <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="button8.Text" xml:space="preserve">
     <value>çıkış</value>
@@ -234,14 +185,8 @@
   <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>523, 155</value>
-  </data>
   <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="button9.Text" xml:space="preserve">
     <value>ayarlar</value>
@@ -249,14 +194,8 @@
   <data name="button11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 343</value>
-  </data>
   <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
-  </data>
-  <data name="button11.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="button11.Text" xml:space="preserve">
     <value>kilitle</value>
