@@ -53,48 +53,56 @@
             resources.ApplyResources(button2, "button2");
             button2.Name = "button2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             resources.ApplyResources(button3, "button3");
             button3.Name = "button3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
             resources.ApplyResources(button4, "button4");
             button4.Name = "button4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
             resources.ApplyResources(button5, "button5");
             button5.Name = "button5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
             resources.ApplyResources(button6, "button6");
             button6.Name = "button6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
             resources.ApplyResources(button7, "button7");
             button7.Name = "button7";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
             resources.ApplyResources(button8, "button8");
             button8.Name = "button8";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
             resources.ApplyResources(button9, "button9");
             button9.Name = "button9";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button11
             // 

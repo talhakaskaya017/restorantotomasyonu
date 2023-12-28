@@ -59,5 +59,46 @@ namespace restorantotomasyonu.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap desktop_wallpaper_deep_red_for_your_mobile_tablet_explore_deep_red_deep_red_deep_red_background_deep_blue {
+            get {
+                object obj = ResourceManager.GetObject("desktop-wallpaper-deep-red-for-your-mobile-tablet-explore-deep-red-deep-red-deep-" +
+                        "red-background-deep-blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap efa8fccd313b6ed1c70a94fedc0f9417 {
+            get {
+                object obj = ResourceManager.GetObject("efa8fccd313b6ed1c70a94fedc0f9417", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_500x500_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("green-500x500-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

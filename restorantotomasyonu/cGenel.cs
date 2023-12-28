@@ -11,5 +11,8 @@ namespace restorantotomasyonu
         public string conString = "Server =.\\SQLEXPRESS;Database=restorant;Trusted_Connection=True";
         public static int _personelId;
         public static int _gorevId;
+
+        public static string _buttonValue;
+        public static string _buttonName;
     }
 }

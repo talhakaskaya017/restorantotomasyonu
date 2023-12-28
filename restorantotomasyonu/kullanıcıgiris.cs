@@ -30,6 +30,10 @@
                 AnaMenu menu = new AnaMenu();
                 menu.Show();
             }
+            else
+            {
+                MessageBox.Show("Şifreniz yanlış?","Uyarı !!" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,6 +54,11 @@
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            // Şifre karakterini belirleyin (örneğin '*')
+            textBox1.PasswordChar = '*';
+
+            // textBox1.Text içindeki metni kullanabilirsiniz.
+            string girilenMetin = textBox1.Text;
 
         }
     }

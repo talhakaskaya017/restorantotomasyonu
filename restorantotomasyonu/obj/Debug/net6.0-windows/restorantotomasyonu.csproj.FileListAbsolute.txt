@@ -27,3 +27,11 @@ C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\bin\Debug\net6.
 C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.Properties.Resources.resources
 C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.AnaMenu.tr-TR.resources
 C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\tr-TR\restorantotomasyonu.resources.dll
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.Masalar.resources
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.paketservis.resources
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.rezervasyon.resources
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.ayarlar.resources
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.kasa.resources
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.musteriler.resources
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.mutfak.resources
+C:\Users\Mustafa\Desktop\restorantotomasyonu\restorantotomasyonu\obj\Debug\net6.0-windows\restorantotomasyonu.raporlar.resources
