@@ -260,9 +260,42 @@ namespace restorantotomasyonu
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                if (true)
+               foreach(Control item in this.Controls)
                 {
+                    if (item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString()=="1")
+                    {
+                        item.BackgroundImage = (System.Drawing.Image)(Properties.Resources.green_500x500_500x500);
+                    }
+                    else if(item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString() =="2") 
+                    {
+                        cMasalar ms = new cMasalar();
+                        DateTime dt1 = Convert.ToDateTime(ms.SessionSum(2));
+                        DateTime dt2 = DateTime.Now;
 
+                        string st1 = Convert.ToDateTime(ms.SessionSum(2)).ToShortTimeString();
+                        string st2 = DateTime.Now.ToShortTimeString();
+
+                        DateTime t1 = dt1.AddMinutes(DateTime.Parse(st1).TimeOfDay.TotalMinutes);
+                        DateTime t2 = dt2.AddMinutes(DateTime.Parse(st2).TimeOfDay.TotalMinutes);
+
+                        var fark = t2 - t1;
+
+                        item.Text =
+                        string.Format("{0}{1}{2}",
+                        fark.Days > 0 ? string.Format("{0} gün", fark.Days) : "",
+                        fark.Hours > 0 ? string.Format("{0} gün", fark.Days) : "",
+                        fark.Minutes > 0 ? string.Format("{0} dakika", fark.Minutes) : "").Trim() + "\n\n\nMasa" + dr["ID"].ToString();
+
+                        item.BackgroundImage = (System.Drawing.Image)(Properties.Resources.desktop_wallpaper_deep_red_for_your_mobile_tablet_explore_deep_red_deep_red_deep_red_background_deep_blue);
+                    }
+                    else if(item.Name == "button" + dr["ID"].ToString() && dr["DURUM"].ToString() == "3")
+                    {
+                        item.BackgroundImage = (System.Drawing.Image)(Properties.Resources.images);
+                    }
+                    else if (item.Name == "button" + dr["ID"].ToString() && dr["DURUM"].ToString() == "4")
+                    {
+                        item.BackgroundImage = (System.Drawing.Image)(Properties.Resources.efa8fccd313b6ed1c70a94fedc0f9417);
+                    }
                 }
             }
         }

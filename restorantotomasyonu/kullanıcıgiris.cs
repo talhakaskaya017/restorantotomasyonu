@@ -32,13 +32,13 @@
             }
             else
             {
-                MessageBox.Show("Şifreniz yanlış?","Uyarı !!" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Şifreniz yanlış?", "Uyarı !!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {   
-                if(MessageBox.Show("Çıkmak istediğinize emin misiniz?","Uyarı !!!",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)==DialogResult.Yes)
+        {
+            if (MessageBox.Show("Çıkmak istediğinize emin misiniz?", "Uyarı !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -59,6 +59,16 @@
 
             // textBox1.Text içindeki metni kullanabilirsiniz.
             string girilenMetin = textBox1.Text;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

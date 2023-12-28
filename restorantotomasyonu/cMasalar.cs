@@ -29,7 +29,7 @@ namespace restorantotomasyonu
         {
             string dt = "";
             SqlConnection con = new SqlConnection(gnl.conString);
-            SqlCommand cmd = new SqlCommand("Select Tarih,MasaId From Adisyon Right Join Masalar on Adisyon.MasaId=Masalar.ID where Masalar.DURUM=@durum and Adisyon.Durum=0", con);
+            SqlCommand cmd = new SqlCommand("Select TARIH,MASAID From adisyon Right Join masalar on adisyon.MASAID=masalar.ID where masalar.DURUM=@durum and adisyon.Durum=0", con);
             SqlDataReader dr = null;
             cmd.Parameters.Add("@durum",SqlDbType.Int).Value= state;
             try
@@ -41,7 +41,7 @@ namespace restorantotomasyonu
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    dt = Convert.ToDateTime(dr["Tarih"]).ToString();
+                    dt = Convert.ToDateTime(dr["TARIH"]).ToString();
                 }
             }
             catch (Exception ex)
