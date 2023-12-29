@@ -146,7 +146,7 @@ namespace restorantotomasyonu
         private void button7_Click(object sender, EventArgs e)
         {
             paketservis ps = new paketservis();
-            int uzunluk = button7.Text.Length;
+            int uzunluk = button6.Text.Length;
 
             if (uzunluk >= 6)
             {
@@ -167,6 +167,27 @@ namespace restorantotomasyonu
         private void button8_Click(object sender, EventArgs e)
         {
             paketservis ps = new paketservis();
+            int uzunluk = button7.Text.Length;
+
+            if (uzunluk >= 6)
+            {
+                cGenel._buttonValue = button7.Text.Substring(uzunluk - 6, 6);
+            }
+            else
+            {
+                // Eğer düğme metni 6 karakterden kısa ise, tüm metni kullanabilirsiniz veya başka bir işlem yapabilirsiniz.
+                cGenel._buttonValue = button7.Text;
+            }
+
+            cGenel._buttonName = button7.Name;
+            this.Close();
+            ps.ShowDialog();
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            paketservis ps = new paketservis();
             int uzunluk = button8.Text.Length;
 
             if (uzunluk >= 6)
@@ -185,7 +206,7 @@ namespace restorantotomasyonu
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
             paketservis ps = new paketservis();
             int uzunluk = button9.Text.Length;
@@ -206,7 +227,7 @@ namespace restorantotomasyonu
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void button16_Click(object sender, EventArgs e)
         {
             paketservis ps = new paketservis();
             int uzunluk = button10.Text.Length;
@@ -226,27 +247,6 @@ namespace restorantotomasyonu
             ps.ShowDialog();
 
         }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            paketservis ps = new paketservis();
-            int uzunluk = button16.Text.Length;
-
-            if (uzunluk >= 6)
-            {
-                cGenel._buttonValue = button16.Text.Substring(uzunluk - 6, 6);
-            }
-            else
-            {
-                // Eğer düğme metni 6 karakterden kısa ise, tüm metni kullanabilirsiniz veya başka bir işlem yapabilirsiniz.
-                cGenel._buttonValue = button16.Text;
-            }
-
-            cGenel._buttonName = button16.Name;
-            this.Close();
-            ps.ShowDialog();
-
-        }
         cGenel gnl = new cGenel();
         private void Masalar_Load(object sender, EventArgs e)
         {
@@ -260,13 +260,13 @@ namespace restorantotomasyonu
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-               foreach(Control item in this.Controls)
+                foreach (Control item in this.Controls)
                 {
-                    if (item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString()=="1")
+                    if (item.Name == "button" + dr["ID"].ToString() && dr["DURUM"].ToString() == "1")
                     {
                         item.BackgroundImage = (System.Drawing.Image)(Properties.Resources.green_500x500_500x500);
                     }
-                    else if(item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString() =="2") 
+                    else if (item.Name == "button" + dr["ID"].ToString() && dr["DURUM"].ToString() == "2")
                     {
                         cMasalar ms = new cMasalar();
                         DateTime dt1 = Convert.ToDateTime(ms.SessionSum(2));
@@ -288,7 +288,7 @@ namespace restorantotomasyonu
 
                         item.BackgroundImage = (System.Drawing.Image)(Properties.Resources.desktop_wallpaper_deep_red_for_your_mobile_tablet_explore_deep_red_deep_red_deep_red_background_deep_blue);
                     }
-                    else if(item.Name == "button" + dr["ID"].ToString() && dr["DURUM"].ToString() == "3")
+                    else if (item.Name == "button" + dr["ID"].ToString() && dr["DURUM"].ToString() == "3")
                     {
                         item.BackgroundImage = (System.Drawing.Image)(Properties.Resources.images);
                     }
