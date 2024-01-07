@@ -28,12 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "musteriler";
+            ccik = new Button();
+            bgeri = new Button();
+            SuspendLayout();
+            // 
+            // ccik
+            // 
+            ccik.BackgroundImage = Properties.Resources._6035_exit_icon;
+            ccik.BackgroundImageLayout = ImageLayout.Zoom;
+            ccik.Location = new Point(88, 375);
+            ccik.Name = "ccik";
+            ccik.Size = new Size(45, 45);
+            ccik.TabIndex = 4;
+            ccik.UseVisualStyleBackColor = true;
+            ccik.Click += ccik_Click;
+            // 
+            // bgeri
+            // 
+            bgeri.BackColor = Color.FromArgb(192, 0, 0);
+            bgeri.BackgroundImage = Properties.Resources._9004860_arrow_direction_left_back_icon;
+            bgeri.BackgroundImageLayout = ImageLayout.Zoom;
+            bgeri.Location = new Point(29, 375);
+            bgeri.Name = "bgeri";
+            bgeri.Size = new Size(53, 45);
+            bgeri.TabIndex = 3;
+            bgeri.UseVisualStyleBackColor = false;
+            // 
+            // musteriler
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(ccik);
+            Controls.Add(bgeri);
+            Name = "musteriler";
+            Text = "musteriler";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button ccik;
+        private Button bgeri;
     }
 }

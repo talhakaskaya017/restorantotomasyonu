@@ -85,5 +85,19 @@ namespace restorantotomasyonu
             this.Close();
             ay.Show();
         }
+
+        private void ccik_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Çıkmak istediğinize emin misiniz?", "Uyarı !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void bgeri_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

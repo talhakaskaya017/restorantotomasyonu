@@ -63,21 +63,24 @@
             // 
             // bgeri
             // 
-            bgeri.Location = new Point(27, 409);
+            bgeri.BackColor = Color.FromArgb(192, 0, 0);
+            bgeri.BackgroundImage = Properties.Resources._9004860_arrow_direction_left_back_icon;
+            bgeri.BackgroundImageLayout = ImageLayout.Zoom;
+            bgeri.Location = new Point(27, 397);
             bgeri.Name = "bgeri";
-            bgeri.Size = new Size(40, 33);
+            bgeri.Size = new Size(53, 45);
             bgeri.TabIndex = 1;
-            bgeri.Text = "GERİ";
-            bgeri.UseVisualStyleBackColor = true;
+            bgeri.UseVisualStyleBackColor = false;
             bgeri.Click += button6_Click;
             // 
             // ccik
             // 
-            ccik.Location = new Point(82, 409);
+            ccik.BackgroundImage = Properties.Resources._6035_exit_icon;
+            ccik.BackgroundImageLayout = ImageLayout.Zoom;
+            ccik.Location = new Point(86, 397);
             ccik.Name = "ccik";
-            ccik.Size = new Size(40, 33);
+            ccik.Size = new Size(45, 45);
             ccik.TabIndex = 2;
-            ccik.Text = "ÇIKIŞ";
             ccik.UseVisualStyleBackColor = true;
             ccik.Click += button11_Click;
             // 

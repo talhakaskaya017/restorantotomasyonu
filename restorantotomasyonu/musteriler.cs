@@ -16,5 +16,13 @@ namespace restorantotomasyonu
         {
             InitializeComponent();
         }
+
+        private void ccik_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Çıkmak istediğinize emin misiniz?", "Uyarı !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

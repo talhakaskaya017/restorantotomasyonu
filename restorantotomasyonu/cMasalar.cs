@@ -57,6 +57,50 @@ namespace restorantotomasyonu
             }
             return dt;
         }
+
+        public int TableGetbyNumber(string TableValue)
+        {
+            // Null kontrolü ekleniyor
+            if (TableValue == null)
+            {
+                // Varsayılan değeri veya hata durumunu döndürebilirsiniz.
+                // Burada 0 değerini dönüyorum, ancak senaryonuza uygun bir değer seçmelisiniz.
+                return 0;
+            }
+
+            string aa = TableValue;
+            int lenght = aa.Length;
+
+            return Convert.ToInt32(aa.Substring(lenght - 1, 1));
+        }
+
+        public bool TableGetbyState(int ButtonName, int state)
+        {
+            bool result = false;
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("Select DURUM From masalar Where ID=@TableId and DURUM=@state ", con);
+
+            cmd.Parameters.Add("@TableId", SqlDbType.Int).Value = ButtonName;
+            cmd.Parameters.Add("@state", SqlDbType.Int).Value = state;
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                result = Convert.ToBoolean(cmd.ExecuteScalar());
+            }
+            catch (SqlException ex)
+            {
+                string hata = ex.Message;
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
+            return result;
+        }
     }
-   
+
 }
